@@ -4,14 +4,13 @@ const SearchBox = ({searchField, searchChange}) => {
     console.log('searchBox')
     return (
         <div className='pa2'>
-        <label>
-        <input 
+        <input id='searcBox'
         className ='pa3 ba b--green bg-lightest-blue'
         type='search' 
         placeholder='search robots'
         onChange={searchChange} 
         />
-        </label>
+        <label for='searchBox'>Search robots</label>
         </div>
     );
 }
